@@ -28,7 +28,7 @@ def start(url):
     results = soup.findAll(string=re.compile('.*{0}.*'.format(searched_word)), recursive=True)
     print(results)
     if(len(results)!= 0):
-        print('Result Announced')
+        #print('Result Announced') 
         my_message = 'Result Announced'
         telegram_bot_sendtext(my_message)
 
